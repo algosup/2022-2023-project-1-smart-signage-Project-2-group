@@ -1,0 +1,28 @@
+# Functional Specification
+
+## Table of contents
+
+- [Functional Specification](#functional-specification)
+  - [Table of contents](#table-of-contents)
+    - [1. Introduction](#1-introduction)
+    - [2. Why this project?](#2-why-this-project)
+    - [3. Scenarios](#3-scenarios)
+    - [4. goals](#4-goals)
+    - [5. Non goals](#5-non-goals)
+    - [6. Definition of terms](#6-definition-of-terms)
+  
+### 1. Introduction
+
+Smart signage requested by the signAll's company, is a service allowing to control the leds of the signs.
+
+This spec is not, by any stretch of the imagination, complete.
+
+### 2. Why this project?
+
+### 3. Scenarios
+
+### 4. goals
+
+### 5. Non goals
+
+### 6. Definition of terms
