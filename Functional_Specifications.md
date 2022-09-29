@@ -1,20 +1,31 @@
 # Functional Specification
 
 ## Table of contents
-
 - [Functional Specification](#functional-specification)
   - [Table of contents](#table-of-contents)
+    - [1. Distribution](#1-distribution)
     - [1. Overview](#1-overview)
     - [2. Scenarios](#2-scenarios)
         - [Scenario 1: Christophe](#scenario-1-christophe)
+        - [Scenario 2: Arnaud](#scenario-2-arnaud)
     - [3. goals](#3-goals)
     - [4. Non goals](#4-non-goals)
     - [5. Development and environement and Requirements](#5-development-and-environement-and-requirements)
     - [6. Glossary](#6-glossary)
+
+### 1. Distribution
+
+| PERSON | ROLE |
+| :-: | :-: |
+| Remy | Poject Manager |
+| Pierre | Software Engineer |
+| Gregory | Quality Assurance |
+| Salahddine | Tech Leader |
+| Elise | Program Manager |
   
 ### 1. Overview
 
-Smart signage requested by the signAll[^1] 's company, is a service allowing to control the leds of the signs.
+Smart signage requested by the signAll's[^1] company, is a service allowing to control the leds of the signs.
 
 Actually, this company does not have any connected products. They are therefore obliged to move to find out if the signage is functional, on or off. In order to help them we will create a product that will help them and reduce their expenses.
 
@@ -24,6 +35,11 @@ This spec is not, by any stretch of the imagination, complete.
 
 ##### Scenario 1: Christophe
 
+He is responsible for the signage of fast food establishments (McDo, Burger King, etc.) at SignAll. During the closure of fast food establishments, he is responsible for turning off and on the signs respectively from 1:00 a.m. to 6:00 a.m. in order to comply with regulations. Using the application, he will be able to carry out his mission for all the fast food restaurants in France without having to go to each fast food restaurant.
+
+##### Scenario 2: Arnaud
+
+He is responsible for sign maintenance at SignAll. His job was to do maintenance rounds to check on each panel if all the LEDs were working properly. Shortly afterwards, thanks to the application, he can simply carry out maintenance tests remotely and thus allows the company to reduce his travel costs.
 
 ### 3. goals
 
@@ -49,15 +65,16 @@ This version will not support the following features:
 ### 5. Development and environement and Requirements
 
   - Go[^2]
-    - TinyGo[^3] 
+    - TinyGo[^3]
+  - Windows/MacOS on development
   
 ### 6. Glossary
 
 [^1]: signAll
-It's a French company specializing in signs and signage.
+SignAll is a compagny that create innovative of the signages, customizable and as environmentally friendly as possible.
 
-[^2]: GO 
-It's a primarily object-oriented programming language.
+[^2]: GO
+GO is an open source programming language used for general purpose. Go was developed by Google.
 
 [^3]: TinyGO
-It's an implementation of the Go language.
+TinyGo brings the Go programming language to embedded systems and to the modern web.
