@@ -4,25 +4,60 @@
 
 - [Functional Specification](#functional-specification)
   - [Table of contents](#table-of-contents)
-    - [1. Introduction](#1-introduction)
-    - [2. Why this project?](#2-why-this-project)
-    - [3. Scenarios](#3-scenarios)
-    - [4. goals](#4-goals)
-    - [5. Non goals](#5-non-goals)
-    - [6. Definition of terms](#6-definition-of-terms)
+    - [1. Overview](#1-overview)
+    - [2. Scenarios](#2-scenarios)
+        - [Scenario 1: Christophe](#scenario-1-christophe)
+    - [3. goals](#3-goals)
+    - [4. Non goals](#4-non-goals)
+    - [5. Development and environement and Requirements](#5-development-and-environement-and-requirements)
+    - [6. Glossary](#6-glossary)
   
-### 1. Introduction
+### 1. Overview
 
-Smart signage requested by the signAll's company, is a service allowing to control the leds of the signs.
+Smart signage requested by the signAll[^1] 's company, is a service allowing to control the leds of the signs.
+
+Actually, this company does not have any connected products. They are therefore obliged to move to find out if the signage is functional, on or off. In order to help them we will create a product that will help them and reduce their expenses.
 
 This spec is not, by any stretch of the imagination, complete.
 
-### 2. Why this project?
+### 2. Scenarios
 
-### 3. Scenarios
+##### Scenario 1: Christophe
 
-### 4. goals
 
-### 5. Non goals
+### 3. goals
 
-### 6. Definition of terms
+This version will support the following features:
+
+  - Activation and deactivation of remote signaling.
+  - Remote monitoring of signaling status (functional or faulty).
+  - Brightness change at fixed time.
+  - Adaptation of the intensity of the signage according to the external luminosity.
+  - Real-time fault location.
+  - Create a watchdog to know if the signage can be repaired remotely or if it requires the intervention of a technician.
+  - Leave the choice to the company to adjust the start time and the end time of ignition according to its needs.
+  - The ability to update the entire panel at once.
+  - Warn about some over-heat.
+  - Send an alert to know when the panel needs to be cleaned or checked.
+
+### 4. Non goals
+
+This version will not support the following features:
+
+  - An app or website who can allow us to see the status of the installation.
+
+### 5. Development and environement and Requirements
+
+  - Go[^2]
+    - TinyGo[^3] 
+  
+### 6. Glossary
+
+[^1]: signAll
+It's a French company specializing in signs and signage.
+
+[^2]: GO 
+It's a primarily object-oriented programming language.
+
+[^3]: TinyGO
+It's an implementation of the Go language.
