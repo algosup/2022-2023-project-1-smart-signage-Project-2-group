@@ -1,5 +1,7 @@
 # Test plan
 
+##### What is tested, how, and the expected and achieved results ?
+
 | N° | ACTION | EXPECTED | RESULT |
 | :-: | :-: | :-: | :-: |
 | 1 | Press the button to turn on the light | light on |  |
