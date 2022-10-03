@@ -22,15 +22,20 @@ In this technical, It has every technology, technical information needed for cre
  | Managenment | [Trello](https://trello.com/)|Project Managing|
  
  #### b.Language used
- [Golang](https://go.dev/)
  ![alt text](https://w3soft.org/wpub/media-pbld/2/l/langs-short-desc-go/go-logo.svg)
- [TinyGo](https://tinygo.org/)
+ 
+ [Golang](https://go.dev/)
+ 
  ![alt text](https://avatars.githubusercontent.com/u/45223613?s=280&v=4)
+ 
+ [TinyGo](https://tinygo.org/)
  
  
  
 
 
 ### B.Hardware used
-[Microcontroller LoRa-E5](https://wiki.seeedstudio.com/LoRa-E5_STM32WLE5JC_Module/)
+![alt text](https://seeklogo.com/images/S/seeed-studio-logo-4F3B000EB9-seeklogo.com.png)
+
+ [Microcontroller LoRa-E5](https://tinygo.org/docs/reference/microcontrollers/lorae5/)
 
