@@ -1,0 +1,27 @@
+# Quality Assurance
+
+### Table of content
+
+-[Test plan](#test-plan)
+-[history of bugs](#history-of-bugs)
+
+### Test plan
+
+###### What is tested, how, and the expected and achieved results ?
+
+| N° | ACTION | EXPECTED | RESULT |
+| :-: | :-: | :-: | :-: |
+| 1a | Press the button to turn on the light | light on |  |
+| 2a | Press the button to turn off the light | light off |  |
+| 3a | put the light detector in the dark | the brightness of the light increases |  |
+| 4a | put the light detector in the daylight | the brightness of the light decreases |  |
+| 5a |  |  |  |
+| 6a |  |  |  |
+| 7a |  |  |  |
+| 8a |  |  |  |
+| 9a |  |  |  |
+| 10a |  |  |  |
+
+### history of bugs
+
+###### (refer to the table)
