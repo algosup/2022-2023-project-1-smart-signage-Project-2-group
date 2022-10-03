@@ -9,7 +9,7 @@
 
 ###### What is tested, how, and the expected and achieved results ?
 
-| N° | ACTION | EXPECTED | RESULT |
+| REFERENCE TEST | ACTION | RESULT EXPECTED | RESULT OBTAINED |
 | :-: | :-: | :-: | :-: |
 | 1a | Press the button to turn on the light | light on |  |
 | 2a | Press the button to turn off the light | light off |  |
@@ -20,7 +20,6 @@
 | 7a |  |  |  |
 | 8a |  |  |  |
 | 9a |  |  |  |
-| 10a |  |  |  |
 
 ### history of bugs
 
