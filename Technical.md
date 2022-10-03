@@ -20,6 +20,7 @@ In this technical, It has every technology, technical information needed for cre
  | Code editor| [Visual Studio Code](https://code.visualstudio.com/)|/|
  | Repository| [GitHub](https://github.com/)|Code|
  | Managenment | [Trello](https://trello.com/)|Project Managing|
+ |/|[OpenOCD](https://openocd.org/)|board flashing|
  
  #### b.Language used
  ![alt text](https://w3soft.org/wpub/media-pbld/2/l/langs-short-desc-go/go-logo.svg)
