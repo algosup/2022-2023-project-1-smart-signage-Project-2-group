@@ -15,7 +15,7 @@
 | 2a | Press the button to turn off the light | light off |  |
 | 3a | put the light detector in the dark | the brightness of the light increases |  |
 | 4a | put the light detector in the daylight | the brightness of the light decreases |  |
-| 5a |  |  |  |
+| 5a | turn on all the lights except one (voluntarily turned off) | displays an alert message |  |
 | 6a |  |  |  |
 | 7a |  |  |  |
 | 8a |  |  |  |
