@@ -9,7 +9,7 @@
 
 ###### What is tested, how, and the expected and achieved results ?
 
-| REFERENCE TEST | ACTION | RESULT EXPECTED | RESULT OBTAINED |
+| REFERENCE TEST | ACTION | RESULT EXPECTED | RESULT ACHIEVED |
 | :-: | :-: | :-: | :-: |
 | 1a | Press the button to turn on the light | light on |  |
 | 2a | Press the button to turn off the light | light off |  |
