@@ -4,14 +4,15 @@
 - [Functional Specification](#functional-specification)
   - [Table of contents](#table-of-contents)
     - [1. Distribution](#1-distribution)
-    - [1. Overview](#1-overview)
-    - [2. Scenarios](#2-scenarios)
+    - [2. Overview](#2-overview)
+    - [3. Scenarios](#3-scenarios)
         - [Scenario 1: Christophe](#scenario-1-christophe)
         - [Scenario 2: Arnaud](#scenario-2-arnaud)
-    - [3. goals](#3-goals)
-    - [4. Non goals](#4-non-goals)
-    - [5. Development and environement and Requirements](#5-development-and-environement-and-requirements)
-    - [6. Glossary](#6-glossary)
+    - [4. Risks and Assumptions](#4-risks-and-assumptions)
+    - [5. goals](#5-goals)
+    - [6. Non goals](#6-non-goals)
+    - [7. Development and environement and Requirements](#7-development-and-environement-and-requirements)
+    - [8. Glossary](#8-glossary)
 
 ### 1. Distribution
 
@@ -23,7 +24,7 @@
 | Salahddine NAMIR | Tech Leader |
 | Elise GAUTIER | Program Manager |
   
-### 1. Overview
+### 2. Overview
 
 Smart signage requested by the signAll's[^1] company, is a service allowing to control the leds of the signs.
 
@@ -31,7 +32,7 @@ Actually, this company does not have any connected products. They are therefore 
 
 This spec is not, by any stretch of the imagination, complete.
 
-### 2. Scenarios
+### 3. Scenarios
 
 ##### Scenario 1: Christophe
 
@@ -41,7 +42,17 @@ He is responsible for the signage of fast food establishments (McDo, Burger King
 
 He is responsible for sign maintenance at SignAll. His job was to do maintenance rounds to check on each panel if all the LEDs were working properly. Shortly afterwards, thanks to the application, he can simply carry out maintenance tests remotely and thus allows the company to reduce his travel costs.
 
-### 3. goals
+### 4. Risks and Assumptions
+
+**About the environment law :**
+
+Signages are extinct between 1:00 a.m. and 6:00 a.m., when the signaled activity has ceased. If the activity begins or ceases between  0:00 a.m. and 7:00 a.m, signages must be turned off no later than one hour after the activity ends and may be turned on one hour before the activity resumes.
+
+**the reglementation on the led panel :**
+
+The surface density of installed luminous flux must not exceed 35 lm/ m² in built-up areas and 25 lm/m² outside built-up areas.
+
+### 5. goals
 
 This version will support the following features:
 
@@ -56,19 +67,19 @@ This version will support the following features:
   - Warn about some over-heat.
   - Send an alert to know when the panel needs to be cleaned or checked.
 
-### 4. Non goals
+### 6. Non goals
 
 This version will not support the following features:
 
   - An app or website who can allow us to see the status of the installation.
 
-### 5. Development and environement and Requirements
+### 7. Development and environement and Requirements
 
   - Go[^2]
     - TinyGo[^3]
   - Windows/MacOS on development
   
-### 6. Glossary
+### 8. Glossary
 
 [^1]: signAll
 SignAll is a compagny that create innovative of the signages, customizable and as environmentally friendly as possible.
