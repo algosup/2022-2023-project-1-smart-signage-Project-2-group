@@ -7,7 +7,7 @@
 
 ### Test plan
 
-###### What is tested, how, and the expected and achieved results ?
+###### *What is tested, how, and the expected and achieved results ?*
 
 | REFERENCE TEST | ACTION | RESULT EXPECTED | RESULT ACHIEVED |
 | :-: | :-: | :-: | :-: |
@@ -24,4 +24,5 @@
 
 ### history of bugs
 
-###### (refer to the table)
+###### *(refer to the table)*
+
