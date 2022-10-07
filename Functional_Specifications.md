@@ -17,17 +17,17 @@
 
 | PERSON | ROLE |
 | :-: | :-: |
-| Remy | Poject Manager |
-| Pierre | Software Engineer |
-| Gregory | Quality Assurance |
-| Salahddine | Tech Leader |
-| Elise | Program Manager |
+| Remy CHARLES | Poject Manager |
+| Pierre GORIN | Software Engineer |
+| Gregory PAGNOUX | Quality Assurance |
+| Salahddine NAMIR | Tech Leader |
+| Elise GAUTIER | Program Manager |
   
 ### 1. Overview
 
 Smart signage requested by the signAll's[^1] company, is a service allowing to control the leds of the signs.
 
-Actually, this company does not have any connected products. They are therefore obliged to move to find out if the signage is functional, on or off. In order to help them we will create a product that will help them and reduce their expenses.
+Actually, this company does not have any connected products. They are therefore obliged to move to find out if the signage is functional, on or off. In order to help them, we are going to create a product that will allow them to remotely control the luminous display of the signs but also to know the status of the LEDs[^4].
 
 This spec is not, by any stretch of the imagination, complete.
 
@@ -78,3 +78,6 @@ GO is an open source programming language used for general purpose. Go was devel
 
 [^3]: TinyGO
 TinyGo brings the Go programming language to embedded systems and to the modern web.
+
+[^4]: LEDs
+light-emitting diode (LED) is an electronic device that gives off light when it receives an electrical current.
