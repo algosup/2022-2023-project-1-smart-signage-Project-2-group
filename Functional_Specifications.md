@@ -9,16 +9,15 @@
         - [Scenario 1: Christophe](#scenario-1-christophe)
         - [Scenario 2: Arnaud](#scenario-2-arnaud)
     - [4. Risks and Assumptions](#4-risks-and-assumptions)
-    - [5. goals](#5-goals)
-    - [6. Non goals](#6-non-goals)
-    - [7. Development and environement and Requirements](#7-development-and-environement-and-requirements)
-    - [8. Glossary](#8-glossary)
+    - [5. Non goals](#5-non-goals)
+    - [6. Development and environement and Requirements](#6-development-and-environement-and-requirements)
+    - [7. Glossary](#7-glossary)
 
 ### 1. Distribution
 
 | PERSON | ROLE |
 | :-: | :-: |
-| Remy CHARLES | Poject Manager |
+| Remy CHARLES | Project Manager |
 | Pierre GORIN | Software Engineer |
 | Gregory PAGNOUX | Quality Assurance |
 | Salahddine NAMIR | Tech Leader |
@@ -30,17 +29,17 @@ Smart signage requested by the signAll's[^1] company, is a service allowing to c
 
 Actually, this company does not have any connected products. They are therefore obliged to move to find out if the signage is functional, on or off. In order to help them, we are going to create a product that will allow them to remotely control the luminous display of the signs but also to know the status of the LEDs[^4].
 
-This spec is not, by any stretch of the imagination, complete.
+This spec is not, complete.
 
 ### 3. Scenarios
 
 ##### Scenario 1: Christophe
 
-He is responsible for the signage of fast food establishments (McDo, Burger King, etc.) at SignAll. During the closure of fast food establishments, he is responsible for turning off and on the signs respectively from 1:00 a.m. to 6:00 a.m. in order to comply with regulations. Using the application, he will be able to carry out his mission for all the fast food restaurants in France without having to go to each fast food restaurant.
+Christophe lives in Vierzon with his girlfriend. He is responsible for the signage of McDonald's fast food establishments at SignAll and comes by car. When fast food establishments close, he is responsible for turning off the signs. However, when the McDo restaurant closes, he is no longer in his office and must therefore do it from home. Thanks to the application, he can turn off all the McDonald's signs by sending a command message. Thanks to the application, he was able to turn off all the signs without having to go to his office.
 
 ##### Scenario 2: Arnaud
 
-He is responsible for sign maintenance at SignAll. His job was to do maintenance rounds to check on each panel if all the LEDs were working properly. Shortly afterwards, thanks to the application, he can simply carry out maintenance tests remotely and thus allows the company to reduce his travel costs.
+Arnaud lives in Chateauroux with his wife Caroline and these two children Angéline and Darius. Every morning, he goes to work by carpooling with his colleague Fabien. He is responsible for sign maintenance at SignAll and must do maintenance rounds each day to check on each panel if all the LEDs were working properly. It’s a very long and difficult task, but today his company has made a new update on their application that will help him accomplish his mission. On this application, it can simply perform maintenance tests without having to travel to each sign, thus reducing travel costs and saving time for the company.
 
 ### 4. Risks and Assumptions
 
@@ -52,36 +51,21 @@ Signages are extinct between 1:00 a.m. and 6:00 a.m., when the signaled activity
 
 The surface density of installed luminous flux must not exceed 35 lm/ m² in built-up areas and 25 lm/m² outside built-up areas.
 
-### 5. goals
-
-This version will support the following features:
-
-  - Activation and deactivation of remote signaling.
-  - Remote monitoring of signaling status (functional or faulty).
-  - Brightness change at fixed time.
-  - Adaptation of the intensity of the signage according to the external luminosity.
-  - Real-time fault location.
-  - Create a watchdog to know if the signage can be repaired remotely or if it requires the intervention of a technician.
-  - Leave the choice to the company to adjust the start time and the end time of ignition according to its needs.
-  - The ability to update the entire panel at once.
-  - Warn about some over-heat.
-  - Send an alert to know when the panel needs to be cleaned or checked.
-
-### 6. Non goals
+### 5. Non goals
 
 This version will not support the following features:
 
   - An app or website who can allow us to see the status of the installation.
 
-### 7. Development and environement and Requirements
+### 6. Development and environement and Requirements
 
   - Go[^2]
     - TinyGo[^3]
   - Windows/MacOS on development
   
-### 8. Glossary
+### 7. Glossary
 
-[^1]: signAll
+[^1]: SignAll
 SignAll is a compagny that create innovative of the signages, customizable and as environmentally friendly as possible.
 
 [^2]: GO
