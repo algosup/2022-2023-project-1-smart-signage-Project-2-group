@@ -18,9 +18,10 @@ In this technical, It has every technology, technical information needed for cre
  | What ? | Which ? | Why ? |
  | :---------- | :----------: |----------: |
  | Code editor| [Visual Studio Code](https://code.visualstudio.com/)|/|
+ |IDE|[IDE Arduino](https://www.arduino.cc/en/software)|Code editing|
  | Repository| [GitHub](https://github.com/)|Code|
  | Managenment | [Trello](https://trello.com/)|Project Managing|
- |/|[OpenOCD](https://openocd.org/)|board flashing|
+ |/|[OpenOCD](https://openocd.org/)|Board flashing|
  
  #### b.Language used
  ![alt text](https://w3soft.org/wpub/media-pbld/2/l/langs-short-desc-go/go-logo.svg)
@@ -39,4 +40,8 @@ In this technical, It has every technology, technical information needed for cre
 ![alt text](https://seeklogo.com/images/S/seeed-studio-logo-4F3B000EB9-seeklogo.com.png)
 
  [Microcontroller LoRa-E5](https://tinygo.org/docs/reference/microcontrollers/lorae5/)
+ 
+ ![alt text](https://cdn.iconscout.com/icon/free/png-256/arduino-1-226076.png)
+ 
+ [STM32F103xx ](https://www.st.com/en/microcontrollers-microprocessors/stm32f103c8.html#overview)
 
