@@ -12,21 +12,15 @@
 | REFERENCE TEST | ACTION | RESULT EXPECTED | RESULT ACHIEVED |
 | :-: | :-: | :-: | :-: |
 | 1a | Press the button to turn on the light | light on |  |
-| 1b | Press the button to turn on the light | light on |  |
 | 2a | Press the button to turn off the light | light off |  |
-| 2b | Press the button to turn off the light | light off |  |
 | 3a | put the light detector in the dark | the brightness of the light increases |  |
-| 3b | put the light detector in the dark | the brightness of the light increases |  |
 | 4a | put the light detector in the daylight | the brightness of the light decreases |  |
-| 4b | put the light detector in the daylight | the brightness of the light decreases |  |
-| 5a | turn on all the lights except one (voluntarily turned off) | displays an alert message |  |
-| 5b | turn on all the lights except one (voluntarily turned off) | displays an alert message |  |
-| 6a |  |  |  |
-| 6b |  |  |  |
-| 7a |  |  |  |
-| 7b |  |  |  |
-| 8a |  |  |  |
-| 8b |  |  |  |
+| 5a | at a given time, the lights turn on | light on |  |
+| 6a | at a given time, the lights turn off | light off |  |
+| 7a | turn on all the lights except one (voluntarily turned off) | displays an alert message |  |
+| 8a | put voluntarily a high temperature | displays an alert message |  |
+| 9a |  |  |  |
+| 10a |  |  |  |
 
 ### history of bugs
 
