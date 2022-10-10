@@ -49,5 +49,6 @@ In this technical, It has every technology, technical information needed for cre
 ## 3. Developement Process
 
 ### A. microcontroller
-Initially, for connect the microcontroller (Lora-E5) to the labtop or mac device and applie TinyGo code, we need to have any kind of device like USBDevice. However,  Lora-E5 can't be compatible with USBDevice, we need an other device. OpenOCD It's a software able to use a TinyGo for flashing Lora-E5 board and ST-link device can be connect and use TinyGo code on the board with SWD/SWIM headers. But we can't the board in this way and we need to find something else.    
+Initially, for connect the microcontroller (Lora-E5) to the labtop or mac device and applie TinyGo code, we need to have any kind of device like USBDevice. However,  [Lora-E5 can't be compatible with USBDevice](https://tinygo.org/docs/reference/microcontrollers/lorae5/#interfaces), we need an other device. OpenOCD It's a software able to use a TinyGo for flashing Lora-E5 board and [ST-link](https://www.st.com/resource/en/user_manual/um1075-stlinkv2-incircuit-debuggerprogrammer-for-stm8-and-stm32-stmicroelectronics.pdf) device can be connect and use [TinyGo code on the board with SWD/SWIM headers](https://tinygo.org/docs/reference/microcontrollers/lorae5/#flashing). But we can't the board in this way and we need to find something else. We have too a stm32f1xx defice, we try with the IDE arduino to recognize the board but the IDE can't detect the device even we have installed the package and the driver.
+
 
