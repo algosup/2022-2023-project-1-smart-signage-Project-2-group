@@ -5,6 +5,7 @@
 
 - [1. Introduction](#1-introduction)
 - [2. Development tools](#2-development-tools)
+- [3. Developement Process](#3-developement-process)
 
 ## 1. Introduction
 SignAll, a manifacturing company of luminous signage need a smart device for their product.
@@ -44,4 +45,9 @@ In this technical, It has every technology, technical information needed for cre
  ![alt text](https://cdn.iconscout.com/icon/free/png-256/arduino-1-226076.png)
  
  [STM32F103xx ](https://www.st.com/en/microcontrollers-microprocessors/stm32f103c8.html#overview)
+
+## 3. Developement Process
+
+### A. microcontroller
+Initially, for connect the microcontroller (Lora-E5) to the labtop or mac device and applie TinyGo code, we need to have any kind of device like USBDevice. However,  Lora-E5 can't be compatible with USBDevice, we need an other device. OpenOCD It's a software able to use a TinyGo for flashing Lora-E5 board and ST-link device can be connect and use TinyGo code on the board with SWD/SWIM headers. But we can't the board in this way and we need to find something else.    
 
