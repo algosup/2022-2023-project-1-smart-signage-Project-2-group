@@ -115,6 +115,36 @@ To transfer this program to the board, we use the `flash` subcommand. It's calle
 tinygo flash -target=circuitplay-express
 ```
 `-target` flag depend on what board do you use, for exemple, if you used Arduino Uno, `-target=arduino` is necessary or `-target=itsybitsy-m4` for Adafruit ItsyBitsy M4.
+
+`"machine"` import which provides direct access to the hardware in a somewhat portable way.
+
+``` go
+led.Configure(machine.PinConfig{Mode: machine.PinOutput})
+```
+This code confugure the GPIO pin, it need initialization before they can be used.
+
+``` go
+for {
+    // ...
+}
+```
+`for` here mean `while` in other languages (Golang don't have `while` statement). It's basicly an infinite loop in this case.
+
+``` go
+led.Low()
+```
+Set basicly 0V on the LED.
+
+``` go
+time.Sleep(time.Millisecond * 500)
+```
+It's here for delay the signal.
+
+``` go
+led.High()
+```
+Turn ON the LED.
+
 #### b. Using PWM
 
 #### c. GBD
