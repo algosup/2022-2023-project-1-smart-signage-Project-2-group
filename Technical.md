@@ -1,5 +1,17 @@
 # Technical Specification
+ 2022-2023 Project Smart Signage Groupe 2
+ 
+  Team:
+  
+- [Rémy Charles](https://github.com/RemyCHARLES)
+- [Pierre Gorin](https://github.com/Pierre2103)
+- [Élise Gautier](https://github.com/elisegtr)
+- [Salaheddine Namir](https://github.com/T3rryc)
+- [Grégory Pagnoux](https://github.com/Gregory-Pagnoux)
 
+Create on Sep 27, 2022
+
+Last Update Oct 11, 2022
 ## Table of contents
 
 
@@ -8,6 +20,8 @@
 - [3. Developement Process](#3-developement-process)
 
 ## 1. Introduction
+
+### 1. Overview
 SignAll, a manifacturing company of luminous signage need a smart device for their product.
 The Goal is to propose a devise with some customisation, setting and smart fuctionality for offer a better control of luminous signal.
 In this technical, It has every technology, technical information needed for creating of device.
@@ -29,9 +43,19 @@ In this technical, It has every technology, technical information needed for cre
  
  [Golang](https://go.dev/)
  
+ ver 1.19.1
+ 
+ Go is a statically typed, compiled programming language designed at Google.
+ It can be bring on microtroller via TinyGO.
+ 
  ![alt text](https://avatars.githubusercontent.com/u/45223613?s=280&v=4)
  
  [TinyGo](https://tinygo.org/)
+ 
+ TinyGo is a Go compiler intended for use in small places such as microcontrollers, WebAssembly (Wasm), and command-line tools.
+It can  run and compile TinyGo programs on [over  85 different microcontroller boards](https://tinygo.org/docs/reference/microcontrollers/).
+ 
+ 
  
  
  
