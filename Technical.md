@@ -114,6 +114,7 @@ To transfer this program to the board, we use the `flash` subcommand. It's calle
 ```
 tinygo flash -target=circuitplay-express
 ```
+`-target` flag depend on what board do you use, for exemple, if you used Arduino Uno, `-target=arduino` is necessary or `-target=itsybitsy-m4` for Adafruit ItsyBitsy M4.
 #### b. Using PWM
 
 #### c. GBD
