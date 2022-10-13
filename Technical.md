@@ -11,7 +11,7 @@
 
 Create on Sep 27, 2022
 
-Last Update Oct 11, 2022
+Last Update Oct 13, 2022
 ## Table of contents
 
 
@@ -22,7 +22,7 @@ Last Update Oct 11, 2022
 ## 1. Introduction
 
 ### A. Overview
-SignAll, a manifacturing company of luminous signage need a smart device for their product.
+SignAll, a manifacturing company of luminous signage needs a smart device for their product.
 The Goal is to propose a devise with some customisation, setting and smart fuctionality for offer a better control of luminous signal.
 In this technical, It has every technology, technical information needed for creating of device.
 
@@ -145,9 +145,57 @@ led.High()
 ```
 Turn ON the LED.
 
-#### b. Using PWM
+#### b. Intall TinyGo
+On [MacOS](https://tinygo.org/getting-started/install/macos/), you need to install [Homebrew](https://brew.sh/)  for download tinygo.
 
-#### c. GBD
+If you don't have already install homebrew, type on your terminal:
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+
+and install tinygo:
+
+```
+    brew tap tinygo-org/tools 
+    brew install tinygo
+```
+
+On [Windows](https://tinygo.org/getting-started/install/windows/), you need to install [Scoop](https://scoop.sh/) for download tinygo.
+
+For install scoop, type on powershell:
+
+
+```
+irm get.scoop.sh | iex
+```
+
+
+
+
+
+however, if you get a message error like this ` PowerShell requires an execution policy in [Unrestricted, RemoteSigned, ByPass] to run Scoop. For example, to set the execution policy to 'RemoteSigned' please run 'Set-ExecutionPolicy RemoteSigned -Scope CurrentUser'.` you need to type before:
+ 
+```
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Optional: Needed to run a remote script the first time 
+```
+
+
+
+
+now, you can install scoop,
+
+and install tinygo:
+
+```
+scoop install tinygo
+```
+
+
+
+
+#### c. 
 
 
 
