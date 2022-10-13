@@ -9,7 +9,7 @@
 - [Salaheddine Namir](https://github.com/T3rryc)
 - [Grégory Pagnoux](https://github.com/Gregory-Pagnoux)
 
-Create on Sep 27, 2022
+Create on Sep 29, 2022
 
 Last Update Oct 13, 2022
 ## Table of contents
@@ -145,7 +145,7 @@ led.High()
 ```
 Turn ON the LED.
 
-#### b. Intall TinyGo
+#### b. Install TinyGo
 On [MacOS](https://tinygo.org/getting-started/install/macos/), you need to install [Homebrew](https://brew.sh/)  for download tinygo.
 
 If you don't have already install homebrew, type on your terminal:
