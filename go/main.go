@@ -1,9 +1,15 @@
 package main
 
 import (
+	"fmt"
 	"machine"
 	"time"
 )
+
+func main() {
+	beginning := light_on("true")
+	fmt.Println(beginning)
+}
 
 func light_on(val string) string {
 	rate := time.Second / 500
