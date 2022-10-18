@@ -71,9 +71,22 @@ It can  run and compile TinyGo programs on [over  85 different microcontroller b
 
  [Microcontroller LoRa-E5](https://tinygo.org/docs/reference/microcontrollers/lorae5/)
  
+ HARDWARE SPECIFICATION
+ 
+ ![image](https://user-images.githubusercontent.com/71770514/196367752-9721d48f-229c-4ca1-be54-d70ccb7a9069.png)
+
+  PINOUT 
+  
+ ![image](https://user-images.githubusercontent.com/71770514/196367831-393646a0-9032-40a6-b874-549c14949e04.png)
+
+ 
  ![alt text](https://cdn.iconscout.com/icon/free/png-256/arduino-1-226076.png)
  
- [STM32F103xx ](https://www.st.com/en/microcontrollers-microprocessors/stm32f103c8.html#overview)
+ [STM32F103xx "bluepill" ](https://www.st.com/en/microcontrollers-microprocessors/stm32f103c8.html#overview)
+ 
+ PINOUT
+ 
+ ![image](https://www.electrokit.com/uploads/productfile/41016/stm32f103c8t6_pinout_voltage01.png)
 
 ## 3. Developement Process
 
@@ -81,8 +94,18 @@ It can  run and compile TinyGo programs on [over  85 different microcontroller b
 Initially, for connect the microcontroller (Lora-E5) to the labtop or mac device and applie TinyGo code, we need to have any kind of device like USBDevice. However,  [Lora-E5 can't be compatible with USBDevice](https://tinygo.org/docs/reference/microcontrollers/lorae5/#interfaces), we need an other device. OpenOCD It's a software able to use a TinyGo for flashing Lora-E5 board and [ST-link](https://www.st.com/resource/en/user_manual/um1075-stlinkv2-incircuit-debuggerprogrammer-for-stm8-and-stm32-stmicroelectronics.pdf) device can be connect and use [TinyGo code on the board with SWD/SWIM headers](https://tinygo.org/docs/reference/microcontrollers/lorae5/#flashing). But we can't the board in this way and we need to find something else. We have too a stm32f1xx defice, we try with the IDE arduino to recognize the board but the IDE can't detect the device even we have installed the package and the driver.
 
 #### b. hardware programmer
-[STLinkV2](https://www.st.com/en/development-tools/st-link-v2.html) 
+[STLinkV2](https://www.st.com/en/development-tools/st-link-v2.html) and [STLink](https://www.st.com/resource/en/user_manual/um1075-stlinkv2-incircuit-debuggerprogrammer-for-stm8-and-stm32-stmicroelectronics.pdf) it's a programmer needed for flashing.
 
+STM32"bluepill" needs this followning step:
+- Plug your STLink v2 programmer into your computer’s USB port.
+- Plug your Bluepill into the STLink v2 programmer using the Bluepill [SWIO, SWCLK, 3V3 and GND pins](https://www.electrokit.com/uploads/productfile/41016/stm32f103c8t6_pinout_voltage01.png).
+- Build and flash your TinyGo program using `tinygo flash -target=bluepill`
+
+LoRa-E5 needs this following step:
+- Connect an ST-Link device to the [SWD/SWIM headers](https://user-images.githubusercontent.com/71770514/196367831-393646a0-9032-40a6-b874-549c14949e04.png).
+- Plug your LoRa-E5 board into your computer’s USB port.
+- Plug your ST-Link device into your computer’s USB port.
+- Build and flash your TinyGo program using `tinygo flash -target=lorae5`
 ### B. TinyGo coding
 
 #### a. Blinking LED
