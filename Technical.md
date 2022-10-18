@@ -11,7 +11,7 @@
 
 Create on Sep 29, 2022
 
-Last Update Oct 17, 2022
+Last Update Oct 18, 2022
 ## Table of contents
 
 
@@ -78,7 +78,8 @@ It can  run and compile TinyGo programs on [over  85 different microcontroller b
   PINOUT 
   
  ![image](https://user-images.githubusercontent.com/71770514/196367831-393646a0-9032-40a6-b874-549c14949e04.png)
-
+ 
+[PIN](https://tinygo.org/docs/reference/microcontrollers/lorae5/#pins)
  
  ![alt text](https://cdn.iconscout.com/icon/free/png-256/arduino-1-226076.png)
  
@@ -87,6 +88,8 @@ It can  run and compile TinyGo programs on [over  85 different microcontroller b
  PINOUT
  
  ![image](https://www.electrokit.com/uploads/productfile/41016/stm32f103c8t6_pinout_voltage01.png)
+ 
+ [PIN](https://tinygo.org/docs/reference/microcontrollers/bluepill/#pins)
 
 ## 3. Developement Process
 
