@@ -7,7 +7,8 @@ import (
 )
 
 func main() {
-	beginning := light_on(true)
+	val := true
+	beginning := light_on(val)
 	fmt.Println(beginning)
 }
 
@@ -27,4 +28,5 @@ func light_on(val bool) bool {
 		}
 		return val
 	}
+	return !val
 }
