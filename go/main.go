@@ -8,11 +8,11 @@ import (
 
 func main() {
 	val := true
-	beginning := light_on(val)
+	beginning := blinkLight(val)
 	fmt.Println(beginning)
 }
 
-func light_on(val bool) bool {
+func blinkLight(val bool) bool {
 	rate := time.Second / 500
 
 	leds := machine.PA12
