@@ -20,7 +20,7 @@ func light_on(val bool) bool {
 	leds.Configure(machine.PinConfig{Mode: machine.PinOutput})
 
 	if val == true {
-		for {
+		for i := 0; i < 1000; i++ {
 			leds.High()
 			time.Sleep(rate)
 			leds.Low()

@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"testing"
-)
+import "testing"
 
 func TestLight_on(t *testing.T) {
 	t.Run("true", func(t *testing.T) {
