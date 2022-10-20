@@ -1,32 +1,53 @@
-package main
+package realled
 
 import (
-	"fmt"
 	"machine"
 	"time"
 )
 
-func main() {
-	val := true
-	beginning := blinkLight(val)
-	fmt.Println(beginning)
+type LED struct {
+	pin machine.Pin
+	on  bool
 }
 
-func blinkLight(val bool) bool {
-	rate := time.Second / 500
-
+func New() *LED {
 	leds := machine.PA12
+	leds.Configure(machine.PinConfig{
+		Mode: machine.PinOutput,
+	})
 
-	leds.Configure(machine.PinConfig{Mode: machine.PinOutput})
-
-	if val == true {
-		for i := 0; i < 1000; i++ {
-			leds.High()
-			time.Sleep(rate)
-			leds.Low()
-			time.Sleep(rate)
-		}
-		return val
+	l := LED{
+		pin: leds,
+		on:  false,
 	}
-	return !val
+}
+
+// On indicates if the LED is turned on.
+func (l *LED) On() bool {
+	return l.on
+}
+
+// Set sets the LED to the value.
+// true will turn the LED on
+// false will turn the LED off
+func (l *LED) Set(value bool) {
+	l.on = value
+	if l.on {
+		l.pin.High()
+		return
+	} else {
+		l.pin.Low()
+	}
+}
+
+func (l *LED) Blink() {
+	rate := time.Second / 500
+	for i := 0; i < 1000; i++ {
+		// LED.High()
+		l.Set(true)
+		time.Sleep(rate)
+		// LED.Low()
+		l.Set(false)
+		time.Sleep(rate)
+	}
 }
