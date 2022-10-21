@@ -1,4 +1,4 @@
-package realled
+package main
 
 import "testing"
 
