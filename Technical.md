@@ -11,7 +11,7 @@
 
 Create on Sep 29, 2022
 
-Last Update Oct 18, 2022
+Last Update Oct 21, 2022
 ## Table of contents
 
 
@@ -224,7 +224,55 @@ scoop install tinygo
 
 
 
-#### c. 
+#### c. LED Fuction
+
+We have some feature with LED fuctions.
+
+At first, we define the LED by a struct statement, and setup the LED.
+``` go
+type LED struct {
+	pin machine.Pin
+	on  bool
+} 
+```
+ `pin` indicate what PIN on the board is using on the program.
+ 
+ `on` basic setting ON by default of LED.
+ 
+ After that, we need to set the pin on the board.
+ ``` go
+ leds := machine.PA12
+	leds.Configure(machine.PinConfig{
+		Mode: machine.PinOutput,
+	})
+ ```
+ We use the STR32"bluepill" board, `PA12` is one of PIN of this board and we use it for the LED.
+ 
+ We configure GPIO pin before using it with `Configure` function.
+ 
+ after that, we applie the `leds` variable on LED struct
+ 
+ ``` go
+ l := LED{
+		pin: leds,
+		on:  false,
+	}
+ ```
+ Now, we can use some function on the program.
+ 
+ `On()` function is here for indicate if the LED is ON.
+ 
+ `Set(value bool)` function set the LED on ON or OFF depend the argument is using.
+ 
+`Blink()` function blink during a certain amont of time.
+
+
+ 
+ 
+ 
+ 
+
+
 
 
 
