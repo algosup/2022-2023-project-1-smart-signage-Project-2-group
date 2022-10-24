@@ -13,9 +13,9 @@ func TestOn(t *testing.T) {
 }
 
 // func TestSet(t *testing.T) {
-// 	t.Run("true", func(t *testing.T) {
+// 	t.Run("false", func(t *testing.T) {
 // 		want := true
-// 		got := l.Set(true)
+// 		got := l.Set(false)
 // 		if got != want {
 // 			t.Errorf("The light isn't turn on")
 // 		}

@@ -6,7 +6,7 @@
 	- [Table of content](#table-of-content)
 	- [Test plan](#test-plan)
 	- [History of bugs](#history-of-bugs)
-				- [Test 1](#test-1)
+		- [Test 1](#test-1)
 
 ## Test plan
 
@@ -14,11 +14,11 @@
 
 | REFERENCE TEST | ACTION | RESULT EXPECTED | RESULT ACHIEVED |
 | :-: | :-: | :-: | :-: |
-| 1a | Press the button to turn on the light | light on | **FAIL** |
-| 1b |  |  | **FAIL** |
-| 1c |  |  |  |
-| 2a | Press the button to turn off the light | light off |  |
-| 3a | Press the button to blink the light | light blink |  |
+| 1a | know the state on of the LED | false | **FAIL** |
+| b |  |  | **FAIL** |
+| c |  |  |  |
+| 2a | set the LED light high or low | true |  |
+| 3a | blink the light | light blinking |  |
 | 4a | Modify the lightness | precentage of light |  |
 | 5a | put the light detector in the dark | the brightness of the light increases |  |
 | 6a | put the light detector in the daylight | the brightness of the light decreases |  |
@@ -31,7 +31,9 @@
 
 *(refer to the table)*
 
-##### Test 1
+### Test 1
+
+*last version to the function and test function*
 
 	type LED struct {
 		pin machine.Pin
@@ -69,5 +71,5 @@
 | REFERENCE TEST | TEST REALIZED | EXPLICATION OF THE BUG |
 | :-: | :-: | :-: |
 | a | when you enter the string `"true"`, the LED blinks and returns `true`. | the test didn't return an answer. |
-| b | when you call the fonction `l.On()`, return an error if the LED is on  | the test return that `l` is undefined |
+| b | when you call the function `l.On()`, return an error if the LED is on  | the test return that `l` is undefined |
 | c |  |  |
