@@ -1,11 +1,14 @@
-package main
+package realled
 
 import "testing"
 
 func TestOn(t *testing.T) {
 	t.Run("false", func(t *testing.T) {
+		l := LED{
+			on: true,
+		}
 		want := false
-		got := l.On()
+		got := l.on.On()
 		if got != want {
 			t.Errorf("The light isn't turn on")
 		}
