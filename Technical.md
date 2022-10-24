@@ -11,7 +11,7 @@
 
 Create on Sep 29, 2022
 
-Last Update Oct 21, 2022
+Last Update Oct 24, 2022
 ## Table of contents
 
 
@@ -266,6 +266,39 @@ type LED struct {
  
 `Blink()` function blink during a certain amont of time.
 
+#### d. Scheduler
+
+It's a function who you can set an hour when the LED is turn ON or OFF.
+
+`func state(bool)` show if the LED is Turn ON or OFF.
+
+`func scheduler()` set a hour you want to turn ON or OFF the LED.
+
+`func scheduledOperation(hourOff int, minuteOff int, hourOn int, minuteOn int)` compare the current hour to setting hour and turn ON or OFF the LED depend of the hour.
+
+#### e. Test
+
+TDD exist too in Golang. For creat a new test file, you need to write `<name>_test.go`.
+
+``` go
+import "testing"
+
+```
+It's an import for use test function. For run your test file, you use the commande palette and type  `Go: Test File`.
+
+example of test function:
+``` go
+func TestOn(t *testing.T) {
+	t.Run("true", func(t *testing.T) {
+		want := true
+		got := l.On()
+		if got != want {
+			t.Errorf("The light isn't turn on")
+		}
+	})
+}
+```
+Basically, we testing our function if it get an expected result (here true bool). If the result is false, the test function return an error message and the test fail.
 
  
  
