@@ -1,16 +1,16 @@
 # Quality Assurance
 
-### Table of content
+## Table of content
 
-- [Test plan](#test-plan)
-- [history of bugs](#history-of-bugs)
-  - [Test 1a](#Test-1a)
-  - [Test 1b](#Test-1b)
-  - [Test 1c](#Test-1c)
+- [Quality Assurance](#quality-assurance)
+	- [Table of content](#table-of-content)
+	- [Test plan](#test-plan)
+	- [History of bugs](#history-of-bugs)
+				- [Test 1](#test-1)
 
-### Test plan
+## Test plan
 
-###### *What is tested, how, and the expected and achieved results ?*
+*What is tested, how, and the expected and achieved results ?*
 
 | REFERENCE TEST | ACTION | RESULT EXPECTED | RESULT ACHIEVED |
 | :-: | :-: | :-: | :-: |
@@ -27,34 +27,47 @@
 | 9a | turn on all the lights except one (voluntarily turned off) | displays an alert message |  |
 | 10a | put voluntarily a high temperature | displays an alert message |  |
 
-### history of bugs
+## History of bugs
 
-###### *(refer to the table)*
+*(refer to the table)*
 
-##### Test 1a
+##### Test 1
 
-    func TestLight_on(t *testing.T) {
-        t.Run("true", func(t *testing.T) {
-		    val := "true"
-		    got := light_on(val)
-		    if got != "true" {
-			    fmt.Println("The light isn't turn on")
-		    }
-	    })
-    }
-It's a fail because
+	type LED struct {
+		pin machine.Pin
+		on  bool
+	}
 
-##### Test 1b
+	func New() *LED {
+		leds := machine.PA12
+		leds.Configure(machine.PinConfig{
+			Mode: machine.PinOutput,
+		})
+		l := LED{
+			pin: leds,
+			on:  false,
+		}
+		return &l
+	}
 
-    func TestOn(t *testing.T) {
-	    t.Run("true", func(t *testing.T) {
-		    want := true
-		    got := l.On()
-		    if got != want {
-			    t.Errorf("The light isn't turn on")
-		    }
-	    })
-    }
-It's fail beacause
+	func (l *LED) On() bool {
+		return l.on
+	}
 
-##### Test 1c
+
+
+	func TestOn(t *testing.T) {
+		t.Run("true", func(t *testing.T) {
+			want := true
+			got := l.On()
+			if got != want {
+				t.Errorf("The light isn't turn on")
+			}
+		})
+	}
+
+| REFERENCE TEST | TEST REALIZED | EXPLICATION OF THE BUG |
+| :-: | :-: | :-: |
+| a | when you enter the string `"true"`, the LED blinks and returns `true`. | the test didn't return an answer. |
+| b | when you call the fonction `l.On()`, return an error if the LED is on  | the test return that `l` is undefined |
+| c |  |  |
