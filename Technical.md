@@ -16,6 +16,8 @@ Last Update Oct 25, 2022
 
 
 - [1. Introduction](#1-introduction)
+  - [A. Overview](#a-overview)
+  - [B. Glossary](#b-glossary)
 - [2. Development tools](#2-development-tools)
   - [A. Software used](#a-software-used)
     - [a. Technologies used](#a-technologies-used)
