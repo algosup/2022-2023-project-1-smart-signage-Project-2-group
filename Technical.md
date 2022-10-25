@@ -11,13 +11,17 @@
 
 Create on Sep 29, 2022
 
-Last Update Oct 24, 2022
+Last Update Oct 25, 2022
 ## Table of contents
 
 
 - [1. Introduction](#1-introduction)
 - [2. Development tools](#2-development-tools)
+  - [A. Software used](#a-software-used)
+  - [B. Hardware used](#b-hardware-used)
 - [3. Developement Process](#3-developement-process)
+  - [A. microcontroller ](#a-microcontroller)
+  - [B. TinyGo coding](#b-tinygo-coding)
 
 ## 1. Introduction
 
@@ -66,7 +70,7 @@ It can  run and compile TinyGo programs on [over  85 different microcontroller b
  
 
 
-### B.Hardware used
+### B. Hardware used
 ![alt text](https://seeklogo.com/images/S/seeed-studio-logo-4F3B000EB9-seeklogo.com.png)
 
  [Microcontroller LoRa-E5](https://tinygo.org/docs/reference/microcontrollers/lorae5/)
