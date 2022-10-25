@@ -28,7 +28,7 @@
         - [Scenario 3: Alix](#scenario-3-alix)
     - [4. objective of the project](#4-objective-of-the-project)
     - [5. Risks and Assumptions](#5-risks-and-assumptions)
-    - [6. Non goals](#6-non-goals)
+    - [6. Non goal](#6-non-goal)
     - [7. Development and environement and Requirements](#7-development-and-environement-and-requirements)
     - [8. Glossary](#8-glossary)
 
@@ -44,11 +44,9 @@
   
 ### 2. Overview
 
-Absolut requested by the signAll's[^1] company, is a service allowing to control the leds of the signs.
+Appsolu requested by the signAll's[^1] company, is a service allowing to control the leds of the signs.
 
 Actually, this company does not have any connected products. They are therefore obliged to move to find out if the signage is functional, on or off. In order to help them, we are going to create a product that will allow them to remotely control the luminous display of the signs but also to know the status of the LEDs[^4].
-
-This spec is not, complete.
 
 ### 3. Personas
 
@@ -174,7 +172,7 @@ Signages are extinct between 1:00 a.m. and 6:00 a.m., when the signaled activity
 
 The surface density of installed luminous flux must not exceed 35 lm/ m² in built-up areas and 25 lm/m² outside built-up areas.
 
-### 6. Non goals
+### 6. Non goal
 
 This version will not support the following features:
 
