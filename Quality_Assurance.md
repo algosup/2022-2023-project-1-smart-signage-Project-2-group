@@ -20,7 +20,7 @@
 | c |  |  | **PASS** |
 | 2a | set the LED light high or low | true | **PASS** |
 | 3a | blink the light | true and false 10 times | **FAIL** |
-| b |  |  | **** |
+| b |  |  |  |
 | 4a | Modify the lightness | precentage of light |  |
 | 5a | put the light detector in the dark | the brightness of the light increases |  |
 | 6a | put the light detector in the daylight | the brightness of the light decreases |  |
