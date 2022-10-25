@@ -18,11 +18,20 @@ Last Update Oct 25, 2022
 - [1. Introduction](#1-introduction)
 - [2. Development tools](#2-development-tools)
   - [A. Software used](#a-software-used)
+    - [a. Technologies used](#a-technologies-used)
+    - [b. Language used](#b-language-used)
   - [B. Hardware used](#b-hardware-used)
 - [3. Developement Process](#3-developement-process)
   - [A. microcontroller ](#a-microcontroller)
+    - [a. issue](#a-issue)
+    - [b. hardware programmer](#b-hardware-programmer)
   - [B. TinyGo coding](#b-tinygo-coding)
-
+     - [a. Blinking LED](#a-blinking-led)  
+     - [b. Install TinyGo](#b-install-tinygo)
+     - [c. LED Fuction](#c-led-fuction)
+     - [d. Scheduler](#d-scheduler)
+     - [e. Test](#e-test)
+    
 ## 1. Introduction
 
 ### A. Overview
@@ -38,7 +47,7 @@ In this technical, It has every technology, technical information needed for cre
 ## 2. Development tools
 
 ### A. Software used
-#### a.Technologies used
+#### a. Technologies used
  | What ? | Which ? | Why ? |
  | :---------- | :----------: |----------: |
  | Code editor| [Visual Studio Code](https://code.visualstudio.com/)|/|
@@ -47,7 +56,7 @@ In this technical, It has every technology, technical information needed for cre
  | Managenment | [Trello](https://trello.com/)|Project Managing|
  |/|[OpenOCD](https://openocd.org/)|Board flashing|
  
- #### b.Language used
+ #### b. Language used 
  ![alt text](https://w3soft.org/wpub/media-pbld/2/l/langs-short-desc-go/go-logo.svg)
  
  [Golang](https://go.dev/)
@@ -98,6 +107,8 @@ It can  run and compile TinyGo programs on [over  85 different microcontroller b
 ## 3. Developement Process
 
 ### A. microcontroller
+
+#### a. issue
 Initially, for connect the microcontroller (Lora-E5) to the labtop or mac device and applie TinyGo code, we need to have any kind of device like USBDevice. However,  [Lora-E5 can't be compatible with USBDevice](https://tinygo.org/docs/reference/microcontrollers/lorae5/#interfaces), we need an other device. OpenOCD It's a software able to use a TinyGo for flashing Lora-E5 board and [ST-link](https://www.st.com/resource/en/user_manual/um1075-stlinkv2-incircuit-debuggerprogrammer-for-stm8-and-stm32-stmicroelectronics.pdf) device can be connect and use [TinyGo code on the board with SWD/SWIM headers](https://tinygo.org/docs/reference/microcontrollers/lorae5/#flashing). But we can't the board in this way and we need to find something else. We have too a stm32f1xx defice, we try with the IDE arduino to recognize the board but the IDE can't detect the device even we have installed the package and the driver.
 
 #### b. hardware programmer
