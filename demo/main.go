@@ -2,12 +2,17 @@ package main
 
 import (
 	"machine"
-	// "fmt"
 	"time"
 )
 
 func main() {
-	sendMsg("petit test")
+	for {
+		night()
+		morning()
+		earlyAfternoon()
+		earlyEvening()
+		evening()
+	}
 }
 
 func Off() {
@@ -23,12 +28,58 @@ func On() {
 }
 
 func minLight() {
-	for {
-		On()
-		time.Sleep(time.Second / 1000)
+	Off()
+	time.Sleep(time.Second / 1000)
+	On()
+	time.Sleep(time.Second / 100)
+}
+
+func temperedLight() {
+	Off()
+	time.Sleep(time.Second / 700)
+	On()
+	time.Sleep(time.Second / 700)
+}
+
+// 25s -> night(1am-6am) -> off
+// 20s -> morning(6am-10am) -> 70%
+// 35s -> early afternoon(10am-5pm) -> on
+// 20s -> early evening(5pm-9pm) -> 70%
+// 20s -> evening(9pm-1am) -> 30%
+
+func night() {
+	for start := time.Now(); time.Since(start) < time.Second*4; {
 		Off()
-		time.Sleep(time.Second / 100)
 	}
+	sendMsg("night: lights off")
+}
+
+func morning() {
+	for start := time.Now(); time.Since(start) < time.Second*4; {
+		minLight()
+	}
+	sendMsg("morning: lights on")
+}
+
+func earlyAfternoon() {
+	for start := time.Now(); time.Since(start) < time.Second*4; {
+		On()
+	}
+	sendMsg("early afternoon: lights on")
+}
+
+func earlyEvening() {
+	for start := time.Now(); time.Since(start) < time.Second*4; {
+		minLight()
+	}
+	sendMsg("early evening: lights on")
+}
+
+func evening() {
+	for start := time.Now(); time.Since(start) < time.Second*4; {
+		temperedLight()
+	}
+	sendMsg("evening: lights on")
 }
 
 func sendMsg(message string) {
@@ -41,8 +92,6 @@ func sendMsg(message string) {
 
 	if err != nil {
 		println("Error: " + err.Error())
-
-		// return ""
 	}
 	msg1 := ""
 	for {
@@ -51,7 +100,6 @@ func sendMsg(message string) {
 			if err != nil {
 				println("Error: " + err.Error())
 				continue
-				// return ""
 			}
 			msg1 += string(rb)
 			if msg1[len(msg1)-1] == '\n' {
@@ -60,6 +108,4 @@ func sendMsg(message string) {
 		}
 		uart.Write([]byte(request))
 	}
-
-	// fmt.Println(request)
 }
