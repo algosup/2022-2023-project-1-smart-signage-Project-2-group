@@ -15,11 +15,11 @@ func New() *LED {
 	leds.Configure(machine.PinConfig{
 		Mode: machine.PinOutput,
 	})
+
 	l := LED{
 		pin: leds,
 		on:  false,
 	}
-	return &l
 }
 
 // On indicates if the LED is turned on.
@@ -30,24 +30,23 @@ func (l *LED) On() bool {
 // Set sets the LED to the value.
 // true will turn the LED on
 // false will turn the LED off
-func (l *LED) Set(value bool) bool {
+func (l *LED) Set(value bool) {
 	l.on = value
 	if l.on {
 		l.pin.High()
-		return true
+		return
 	} else {
 		l.pin.Low()
-		return false
 	}
 }
 
 func (l *LED) Blink() {
 	rate := time.Second / 500
 	for i := 0; i < 1000; i++ {
-		// l.pin.High()
+		// LED.High()
 		l.Set(true)
 		time.Sleep(rate)
-		// l.pin.Low()
+		// LED.Low()
 		l.Set(false)
 		time.Sleep(rate)
 	}
