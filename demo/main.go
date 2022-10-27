@@ -7,11 +7,11 @@ import (
 
 func main() {
 	for {
-		night()
 		morning()
 		earlyAfternoon()
 		earlyEvening()
 		evening()
+		night()
 	}
 }
 
@@ -48,35 +48,35 @@ func temperedLight() {
 // 20s -> evening(9pm-1am) -> 30%
 
 func night() {
-	for start := time.Now(); time.Since(start) < time.Second*4; {
+	for start := time.Now(); time.Since(start) < time.Second*25; {
 		Off()
 	}
 	sendMsg("night: lights off")
 }
 
 func morning() {
-	for start := time.Now(); time.Since(start) < time.Second*4; {
+	for start := time.Now(); time.Since(start) < time.Second*20; {
 		minLight()
 	}
 	sendMsg("morning: lights on")
 }
 
 func earlyAfternoon() {
-	for start := time.Now(); time.Since(start) < time.Second*4; {
+	for start := time.Now(); time.Since(start) < time.Second*35; {
 		On()
 	}
 	sendMsg("early afternoon: lights on")
 }
 
 func earlyEvening() {
-	for start := time.Now(); time.Since(start) < time.Second*4; {
+	for start := time.Now(); time.Since(start) < time.Second*20; {
 		minLight()
 	}
 	sendMsg("early evening: lights on")
 }
 
 func evening() {
-	for start := time.Now(); time.Since(start) < time.Second*4; {
+	for start := time.Now(); time.Since(start) < time.Second*20; {
 		temperedLight()
 	}
 	sendMsg("evening: lights on")
